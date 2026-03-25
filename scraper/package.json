@@ -1,0 +1,14 @@
+{
+  "name": "lidl-catalog-scraper",
+  "version": "1.0.0",
+  "description": "Lidl.fr catalog scraper & grocery list builder",
+  "main": "scraper.js",
+  "scripts": {
+    "setup": "npx playwright install chromium",
+    "start": "node scraper.js",
+    "watch": "node -e \"process.env.HEADLESS='false'\" scraper.js"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}
